@@ -28,7 +28,17 @@
     }
 </script>
 
-<h4>RESUMEN DE PEDIDO</h4>
+<div class="form-control">
+    <h2 style="color:darkblue">Resumen de pedido de compra</h2>
+</div>
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item active"> Bienvenido a Compras Ya </li>
+    <li class="breadcrumb-item active"> Estás viendo el detalle de tu pedido de compra</li>
+
+</ol>
+<br />
+
 <a style="float:left;" href="@Url.Action("ListadoProductos", "ComprasYa")" class="btn btn-danger">
     <span><strong>Volver al catalogo</strong></span>
 </a>
@@ -37,10 +47,10 @@
 @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "GestionPedido", autocomplete = "off" }))
 {
     @Html.AntiForgeryToken()
-    <table class="table table-bordered table-striped table-light" >
+    <table class="table table-bordered table-striped table-light">
         <tr>
             <td hidden>
-             
+
                 <input name="docentry" value="@Model.docentry" />
             </td>
         </tr>
@@ -49,8 +59,8 @@
                 @Html.DisplayName("Cliente")
             </th>
             <td>
-            
-                <input class="form-control" name="nomcliente" value="@Model.nomcliente" readonly="readonly"/>
+
+                <input class="form-control" name="nomcliente" value="@Model.nomcliente" readonly="readonly" />
             </td>
         </tr>
         <tr>
@@ -58,7 +68,7 @@
                 @Html.DisplayName("Codigo de producto")
             </th>
             <td>
-                PR0000-<input name="idproducto" class="form-control" value="@Model.idproducto" readonly="readonly"/>
+                PR0000-<input name="idproducto" class="form-control" value="@Model.idproducto" readonly="readonly" />
             </td>
         </tr>
         <tr>
@@ -66,8 +76,8 @@
                 @Html.DisplayName("Nombre producto")
             </th>
             <td>
-            
-                <input class="form-control"  name="nomproducto" value="@Model.nomproducto" readonly="readonly"/>
+
+                <input class="form-control" name="nomproducto" value="@Model.nomproducto" readonly="readonly" />
             </td>
         </tr>
         <tr>
@@ -88,8 +98,8 @@
                 @Html.DisplayName("Precio Unit")
             </th>
             <td>
-                S/. 
-                <input class="form-control" name="precio" value="@Model.precio" readonly="readonly"/>
+                S/.
+                <input class="form-control" name="precio" value="@Model.precio" readonly="readonly" />
             </td>
         </tr>
         <tr>
@@ -108,7 +118,7 @@
                 </th>
                 <td>
                     S/.
-                    <input class="form-control" name="descuento" value="@Model.descuento" readonly="readonly"/>
+                    <input class="form-control" name="descuento" value="@Model.descuento" readonly="readonly" />
                 </td>
 
             </tr>
@@ -119,13 +129,13 @@
 
             <td style="font-size:18px; color:darkred">
                 <strong>
-                    S/. 
-                    <input class="form-control" name="totalreal" value="@Model.totalreal" readonly="readonly"/>
+                    S/.
+                    <input class="form-control" name="totalreal" value="@Model.totalreal" readonly="readonly" />
                 </strong>
             </td>
         </tr>
     </table>
-    <table class="table table-bordered table-striped table-light" border="0" >
+    <table class="table table-bordered table-striped table-light" border="0">
         <tr>
             <th>Ingrese lugar de Entrega</th>
             <td><input class="form-control" type="text" name="lugarDestino" value="" autocomplete="off" /></td>

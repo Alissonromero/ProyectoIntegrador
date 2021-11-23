@@ -48,20 +48,117 @@
         #banner a:hover {
             background: rgba(255,180,20,0.5);
         }
+
+    .producto {
+        max-width: 400px;
+        display: flex;
+        flex-flow: column;
+        border-radius: 6px;
+        box-shadow: 0 0 0.2em rgba(0,0,0,0.2);
+        background-color: white;
+        cursor: pointer;
+        transition-property: box-shadow;
+        transition-duration: 0.3s;
+    }
+
+        .producto:hover {
+            box-shadow: 0 0 2.5em rgb(13 12 12);
+        }
+
+        .producto > img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+    .informacion {
+        border-top: 1px solid rgba(230,230,230);
+        padding: 1em;
+        display: flex;
+        flex-flow: column;
+    }
+
+
+        .informacion * + * {
+            margin-bottom: 0.5em;
+        }
+
+    .tipo-envio {
+        background-color: rgb(52,131,250);
+        color: rgb(255,255,255);
+        font-weight: 600;
+        max-width: max-content;
+        padding: 0 0.2em;
+        border-radius: 3px;
+    }
+
+    .precio {
+        font-size: 1.5em;
+    }
+
+    .precio-envio {
+        color: rgb(0,166,80);
+    }
+
+    .calificacion, .vendedor {
+        transition-duration: 0.3s;
+        transition-property: opacity;
+        opacity: 0;
+    }
+
+    .producto:hover .calificacion,
+    .producto:hover .vendedor {
+        opacity: 1;
+    }
+
+    .descripcion, .vendedor {
+        font-weight: 300;
+    }
+
+    .precio-envio, .descripcion, .vendedor {
+        font-size: 0.9em;
+    }
+
+    .tipo-envio, .calificacion > span:last-child {
+        font-size: 0.8em;
+    }
+
+    .calificacion > span:first-child {
+        color: yellow;
+    }
+
+    .cuerpo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 359px);
+        grid-template-rows: 1fr;
+        grid-gap: 1em;
+    }
 </style>
 
-<div class="container">
-    <div class="row" style="float:left; margin-left:10%">
+<div class="form-control">
+    <h2 style="color:darkblue">Visualizar Mis Publicaciones</h2>
+</div>
 
-        @if (ListaProductos != null)
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item active"> Bienvenido a Compras Ya </li>
+    <li class="breadcrumb-item active"> Estás viendo tus publicaciones</li>
+
+</ol>
+<br />
+
+
+<div class="cuerpo">
+
+
+    @if (ListaProductos != null)
+    {
+        foreach (var p in ListaProductos)
         {
-            foreach (var p in ListaProductos)
-            {
+    <div class="producto">
 
 
-        <div id="cajas" class="col-md-3" style="background-color: rgb(220, 220, 220, 0.8); margin:10px;">
-            <img src="@Url.Content(p.fotos)" width="150" height="120" style="margin-top:10px">
+        <img src="@Url.Content(p.fotos)">
 
+        <div class="informacion">
             <div class="card-body">
                 <p hidden><strong>@p.docentry</strong></p>
                 <h5 class="card-title"><strong>@p.nombre</strong></h5>
@@ -77,20 +174,28 @@
                     <strong>Editar</strong>
                 </a>
             </div>
-        <br />
-        </div>}
-
+            <br />
+        </div>
+    </div>
+            }
+        
         }
         else
         {
-            <ol class="breadcrumb mb-4 mt-4">
-                <li class="breadcrumb-item active"> Bienvenido a ComprasYa </li>
-                <li class="breadcrumb-item active"> Todavia no tiene productos publicados</li>
-            </ol>
+        <div class="form-control">
+            <h2 style="color:darkblue">Visualizar Mis Publicaciones</h2>
+        </div>
+
+        <ol class="breadcrumb mb-4 mt-4">
+            <li class="breadcrumb-item active"> Todavía no tienes ningún producto publicado :c</li>
+
+        </ol>
+        <br />
+
         }
 
-    </div>
-</div>
+ </div>
+
 
 
 <script>

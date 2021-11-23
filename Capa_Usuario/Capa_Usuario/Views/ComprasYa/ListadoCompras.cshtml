@@ -13,7 +13,16 @@
         $(location).attr('href', "/ComprasYa/ListadoCompras?" + object);
     }
 </script>
-<h4>RESUMEN DE ORDENES</h4>
+<div class="form-control">
+    <h2 style="color:darkblue">Resumen de ordenes</h2>
+</div>
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item active"> Bienvenido a Compras Ya </li>
+    <li class="breadcrumb-item active"> Estás viendo el resumen de tus ordenes</li>
+
+</ol>
+<br />
 <a style="float:left;" href="@Url.Action("SesionUsuario", "ComprasYa")" class="btn btn-warning">
     <i class="icon-home3"></i>
     <span><strong>Volver al menu</strong></span>
@@ -53,7 +62,7 @@
             </th>
             <th>
                 Tipo de Comprobante
-                <select name="tipo"  onchange="filtrar();" class="form-select" style="width: 100px; font-size: 13px;">
+                <select name="tipo" onchange="filtrar();" class="form-select" style="width: 100px; font-size: 13px;">
                     <option value="">Seleccione</option>
                     @if (f.tipo == "Boleta")
                     {
@@ -65,11 +74,11 @@
                     }
                     @if (f.tipo == "Factura")
                     {
-                <option value="Factura" selected>Factura</option>
+                        <option value="Factura" selected>Factura</option>
                     }
                     else
                     {
-                <option value="Factura">Factura</option>
+                        <option value="Factura">Factura</option>
                     }
                 </select>
             </th>
@@ -79,25 +88,25 @@
                     <option value="">Seleccione</option>
                     @if (f.modpago == "Credito")
                     {
-                <option value="Credito" selected>Credito</option>
+                        <option value="Credito" selected>Credito</option>
                     }
                     else
                     {
-                <option value="Credito">Credito</option>
+                        <option value="Credito">Credito</option>
                     }
                     @if (f.modpago == "Contado")
                     {
-                <option value="Contado" selected>Contado</option>
+                        <option value="Contado" selected>Contado</option>
                     }
                     else
                     {
-                <option value="Contado">Contado</option>
+                        <option value="Contado">Contado</option>
                     }
                 </select>
             </th>
             <th>
                 Estado
-                <select name="estado" onchange="filtrar();" class="form-select"  style="width: 80px; font-size: 13px;">
+                <select name="estado" onchange="filtrar();" class="form-select" style="width: 80px; font-size: 13px;">
                     <option value="">Seleccione</option>
                     @if (f.estado == "En Proceso")
                     {

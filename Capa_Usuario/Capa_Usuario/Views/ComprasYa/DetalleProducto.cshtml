@@ -8,7 +8,7 @@
     .contenido {
         width: 1100px;
         height: 650px;
-        background-color: rgb(220, 220, 220, 0.8);
+        background-color: white;
     }
 
     .imagenes {
@@ -29,7 +29,7 @@
 
     .product-small-img img {
         width: 100%;
-        height:200px;
+        height: 200px;
         border: 1px solid rgb(255 106 0);
         padding: 10px;
         margin: 8px;
@@ -52,10 +52,22 @@
         padding: 10px;
         width: 45%;
     }
-    table tr{
-    font-size:13px;
+
+    table tr {
+        font-size: 13px;
     }
 </style>
+
+<div class="form-control">
+    <h2 style="color:darkblue">Detalle de Producto</h2>
+</div>
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item active"> Bienvenido a Compras Ya </li>
+    <li class="breadcrumb-item active"> Estás viendo el detalle de un producto</li>
+
+</ol>
+<br />
 
 <div class="contenido">
 
@@ -146,14 +158,14 @@
                 <td>@Html.DisplayFor(model => model.tiempoRegistro)</td>
             </tr>
         </table>
-   </aside>
+    </aside>
 </div>
 
 <script type="text/javascript">
-function mifuncion(smallImg) {
-    var fullImg = document.getElementById("imageBox");
-    fullImg.src = smallImg.src;
-}
+    function mifuncion(smallImg) {
+        var fullImg = document.getElementById("imageBox");
+        fullImg.src = smallImg.src;
+    }
 </script>
 <script>
     if ('@ViewBag.mensaje' !="") {

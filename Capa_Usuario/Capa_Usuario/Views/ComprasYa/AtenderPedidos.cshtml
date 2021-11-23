@@ -6,7 +6,7 @@
     Pedido_E f = (Pedido_E)ViewBag.Pedido;
 }
 
-<h2>ATENDER MIS VENTAS </h2>
+
 
 <script>
     $(document).ready(function () {
@@ -16,6 +16,17 @@
         $(location).attr('href', "/ComprasYa/AtenderPedidos?" + object);
     }
 </script>
+
+<div class="form-control">
+    <h2 style="color:darkblue">Atender mis pedidos</h2>
+</div>
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item active"> Bienvenido a Compras Ya </li>
+    <li class="breadcrumb-item active"> Estás en atender mis pedidos</li>
+
+</ol>
+<br />
 <a style="float:left;" href="@Url.Action("SesionUsuario", "ComprasYa")" class="btn btn-warning">
     <i class="icon-home3"></i>
     <span><strong>Volver al menu</strong></span>

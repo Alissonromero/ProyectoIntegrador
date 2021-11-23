@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Index";
     Layout = null;
+
 }
 <script>
     function mostrarPassword() {
@@ -17,9 +18,9 @@
     }
 </script>
 <link href="~/Content/Boostsrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="~/Content/estilos.css" rel="stylesheet" type="text/css" />
-<link href="~/Content/alertify.min.css" rel="stylesheet" />
 
+<link href="~/Content/alertify.min.css" rel="stylesheet" />
+<link href="~/Content/estilos.css" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -29,7 +30,6 @@
 <script src="~/Scripts/sweetalert2@11.js"></script>
 <script src="~/Scripts/alertify.min.js"></script>
 
-<body>
     <main style="text-align:center;">
         <div class="container" style="margin-top: 50px; text-align: center;">
             <br /><br />
@@ -59,8 +59,10 @@
                             </div>
                             <p style="color:black; text-align:justify; font-size:12px;">En caso de tener algun inconveniente comuniquese con nosotros mediante: <b>atencioncliente@cibertec.com.pe</b> </p>
                             <div>
-                                <p style="color:black; text-align:center; font-size:14px;"><strong>Todavia no tienes una cuenta? </strong>
-                                <a style="color:red; text-align:center; font-size:14px;" href="@Url.Action( "RegistrarUsuario", "ComprasYa")"><strong>Registrate aqui</strong></a></p>   
+                                <p style="color:black; text-align:center; font-size:14px;">
+                                    <strong>Todavia no tienes una cuenta? </strong>
+                                    <a style="color:red; text-align:center; font-size:14px;" href="@Url.Action( "RegistrarUsuario", "ComprasYa")"><strong>Registrate aqui</strong></a>
+                                </p>
                             </div>
                         </form>
                     }
@@ -68,14 +70,14 @@
             </div>
         </div>
     </main>
-</body>
-<script>
+
+    <script>
 
     if ('@ViewBag.mensaje' != "") {
 
         alertify.error('@ViewBag.mensaje');
     }
-</script>
+    </script>
 
 
 

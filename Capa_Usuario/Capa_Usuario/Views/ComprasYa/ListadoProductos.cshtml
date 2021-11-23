@@ -62,7 +62,7 @@
     }
 
         .producto:hover {
-            box-shadow: 0 0 1.5em rgba(0,0,0,0.2);
+            box-shadow: 0 0 2.5em rgb(13 12 12);
         }
 
         .producto > img {
@@ -134,17 +134,15 @@
     }
 </style>
 
-
-<section id="banner">
-    <img src="~/Imagenes/banner/banner.jpg" />
-    <div class="contenedor">
-        <a href="@Url.Action("PublicarProductos", "ComprasYa")" class="btn btn-info">
-            <span><strong>Publicar Productos</strong></span>
-        </a>
-    </div>
-</section>
+<img src="~/Imagenes/banner/banner_zapatillas.jpg" width="1110" height="350"/>
 <br />
-
+<div class="form-control">
+    <a href="@Url.Action("PublicarProductos", "ComprasYa")" class="btn btn-success">
+        <span><strong>Publicar Productos</strong></span>
+    </a>
+</div>
+<br />
+<br />
 
 <div class="cuerpo">
     @foreach (var p in ListaProductos)
@@ -171,10 +169,10 @@
                     @p.categoria2 / @p.subcategoria2
                 </span>
 
-                        <span class="vendedor">@p.opRegistro</span>
+                <span class="vendedor">@p.opRegistro</span>
 
-                        @Html.ActionLink("Comprar", "DetalleProducto", new { id = p.docentry }, new { @class = "btn btn-primary" })
-</div>
+                @Html.ActionLink("Comprar", "DetalleProducto", new { id = p.docentry }, new { @class = "btn btn-primary" })
+            </div>
 
 
             <div class="calificacion">
@@ -187,7 +185,7 @@
                     <i class="icon-star-full"></i>
                 </span>
 
-                <span>100</span>
+                <span>150</span>
             </div>
 
 

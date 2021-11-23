@@ -1,5 +1,4 @@
-﻿
-@model Capa_Entidad.Usuario_E
+﻿@model Capa_Entidad.Usuario_E
 
 
 @{
@@ -7,15 +6,33 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
-<div class="text-lg-center">
-    <br />
-    <h5><b>Manual de Usuario</b></h5><br />
-    <a href="@Url.Action("Manual", "ComprasYa")" class="btn btn-success">
-        <i class="icon-download"></i>
-        <span><strong>Descargue su Manual</strong></span>
-    </a>
-</div>
 
+
+<div class="text-lg-right">
+    <br />
+
+    <div class="row" style="margin-top: 3%">
+        <a href="@Url.Action("Manual", "ComprasYa")" class="btn btn-success">
+            <i class="icon-download"></i>
+            <span><strong>Descargue su Manual de usuario</strong></span>
+        </a>
+
+
+    </div>
+</div>
+<br />
+<div class="jumbotron">
+    <h1 style="color:darkblue">Bienvenido a Compras Ya </h1>
+    <h5 style="color:slategray">donde puedes comprar y publicar todo tipo de productos.</h5>
+    <center>
+        <a class="btn btn-primary" href="@Url.Action("PublicarProductos","ComprasYa")"><span><strong>Publicar Producto</strong></span> </a>
+    </center>
+    <br />
+
+    <img src="~/Imagenes/banner/banner_xiaomi.jpg" width="1000" height="300" />
+
+</div>
+</div>
 
 
 <script>
