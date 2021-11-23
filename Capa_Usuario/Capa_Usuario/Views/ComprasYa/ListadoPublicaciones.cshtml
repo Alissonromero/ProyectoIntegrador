@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Capa_Entidad.Producto_E>
+@using Capa_Entidad;
+
+@{ ViewBag.Title = "ListadoPublicaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Producto_E f = (Producto_E)ViewBag.Producto;
+    var ListaProductos = ViewBag.listaProductos; }
+<style>
+    #cajas {
+        border-top-width: 5px;
+        border-right-width: 5px;
+        border-left-width: 5px;
+        border-bottom-width: 5px;
+        border-color: darkorange;
+        border-style: outset;
+        margin: 0px;
+        border-radius: 20px;
+    }
+
+        #cajas p {
+            font-size: 13px;
+        }
+
+    #banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #banner .contenedor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #fff;
+    }
+
+    #banner a {
+        display: block;
+        width: 200px;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 400px;
+        margin-left: 750px;
+        border: 3px solid #fff;
+    }
+
+        #banner a:hover {
+            background: rgba(255,180,20,0.5);
+        }
+</style>
+
+<div class="container">
+    <div class="row" style="float:left; margin-left:10%">
+
+        @if (ListaProductos != null)
+        {
+            foreach (var p in ListaProductos)
+            {
+
+
+        <div id="cajas" class="col-md-3" style="background-color: rgb(220, 220, 220, 0.8); margin:10px;">
+            <img src="@Url.Content(p.fotos)" width="150" height="120" style="margin-top:10px">
+
+            <div class="card-body">
+                <p hidden><strong>@p.docentry</strong></p>
+                <h5 class="card-title"><strong>@p.nombre</strong></h5>
+                <p class="card-text">@p.marca</p>
+                <p class="card-text">@p.categoria2 / @p.subcategoria2</p>
+                <p class="card-text"><em>@p.descripcion</em></p>
+                <h6 style="color:darkred" class="card-text"><strong>S/. @p.precio</strong></h6>
+                <p class="card-text"><strong>Stock disponible: @p.stock</strong></p>
+            </div>
+            <div>
+                <a href="@Url.Action( "EditarProducto", "ComprasYa", new { id = p.docentry } )" class="btn btn-info">
+                    <i title="Editar" class="icon-pencil2"></i>
+                    <strong>Editar</strong>
+                </a>
+            </div>
+        <br />
+        </div>}
+
+        }
+        else
+        {
+            <ol class="breadcrumb mb-4 mt-4">
+                <li class="breadcrumb-item active"> Bienvenido a ComprasYa </li>
+                <li class="breadcrumb-item active"> Todavia no tiene productos publicados</li>
+            </ol>
+        }
+
+    </div>
+</div>
+
+
+<script>
+    if ('@ViewBag.mensaje' !="") {
+        swal("@ViewBag.mensaje", "Presione el boton para continuar", "success");
+    }
+</script>

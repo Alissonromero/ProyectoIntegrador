@@ -1,0 +1,128 @@
+﻿@model IEnumerable<Capa_Entidad.Usuario_E>
+
+@{ ViewBag.Title = "GestionUsuarios";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<h4>LISTADO DE USUARIOS</h4>
+<style>
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+        a:hover {
+            text-decoration: none;
+            color: orangered;
+        }
+
+    td, th {
+        font-size: 14px;
+    }
+</style>
+<script>
+    function borrar(id) {
+        Swal.fire({
+            title: '¿Esta seguro de borrar?',
+            text: "Se perderan los datos!",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: '¡Si, borrar!'
+
+        }).then(result => {
+            if (result.value) {
+                var parametros = { "id": id };
+                $.ajax('/ComprasYa/EliminarUsuario',
+                    {
+                        data: parametros,
+                        dataType: 'json',
+                        cache: false,
+                        type: 'post'
+                    })
+                $(location).attr('href', "/ComprasYa/GestionUsuarios");
+
+            }
+        });
+    }
+</script>
+<a style="float:left; margin-right:50px;" href="@Url.Action("SesionUsuario", "ComprasYa")" class="btn btn-primary">
+    <i class="icon-home3"></i>
+    <span><strong>Volver al menu</strong></span>
+</a>
+<a style="float:left;" href="@Url.Action("RegistrarUsuario", "ComprasYa")" class="btn btn-success">
+    <span><strong>Crear nuevo usuario</strong></span>
+</a>
+<br />
+<br />
+<table class="table table-light table-bordered table-active table-striped table-responsive-sm">
+    <tr>
+        <th>
+            @Html.DisplayName("DNI")
+        </th>
+        <th>
+            @Html.DisplayName("NOMBRES")
+        </th>
+        <th>
+            @Html.DisplayName("APELLIDOS")
+        </th>
+        <th>
+            @Html.DisplayName("FECHA NAC")
+        </th>
+        <th>
+            @Html.DisplayName("DIRECCION")
+        </th>
+        <th>
+            @Html.DisplayName("PAIS")
+        </th>
+        <th>
+            @Html.DisplayName("TELEFONO")
+        </th>
+        <th>
+            @Html.DisplayName("CORREO")
+        </th>
+        <th>
+            @Html.DisplayName("ROL")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.dni)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.nombre)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.apellido)
+    </td>
+    <td>
+        @item.fecnac.ToString("dd/MM/yyyy")
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.direccion)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.pais)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.telefono)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.correo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.rol2)
+    </td>
+    <td>
+        <a href="@Url.Action( "EditarUsuario", "ComprasYa", new { id = item.docentry } )"><i title="Editar" class="icon-pencil2"></i></a>
+        <a href="@Url.Action( "DetallesUsuario", "ComprasYa", new { id = item.docentry })"><i title="Detalles" class="icon-search"></i></a>
+        <button style="border:none; background:none;" type="button" onclick="borrar(@item.docentry);"><i title="Eliminar" class="icon-cross"></i></button>
+
+    </td>
+</tr>}
+
+</table>

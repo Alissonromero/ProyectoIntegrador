@@ -1,0 +1,41 @@
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.AssemblyReference.cache
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csprojAssemblyReference.cache
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csprojAssemblyReference.cache
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.AssemblyReference.cache
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+F:\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+F:\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+F:\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csprojAssemblyReference.cache
+F:\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+F:\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+F:\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csprojAssemblyReference.cache
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.pdb

@@ -1,0 +1,143 @@
+﻿@model Capa_Entidad.Producto_E
+@using Capa_Entidad
+@{
+    ViewBag.Title = "EditarProducto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Categoria_E> categoria = (List<Categoria_E>)ViewBag.Categorias;
+    List<SubCategoria_E> subcategoria = (List<SubCategoria_E>)ViewBag.SubCategorias;
+    var jss = new System.Web.Script.Serialization.JavaScriptSerializer();
+    var equInfoJson = jss.Serialize(categoria);
+    var equInfoJson2 = jss.Serialize(subcategoria);
+}
+<style>
+    td {
+        padding: 5px;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    #cuerpo {
+        padding-top:50px;
+        padding-left: 100px;
+        width: 960px;
+        margin-left: 8%;
+        background-color: rgb(220, 220, 220, 0.8);
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+</style>
+<script>
+     $(document).ready(function () {
+    });
+    var artInfo = "";
+    var equInfo = JSON.parse('@Html.Raw(equInfoJson)');
+    var equInfo2 = JSON.parse('@Html.Raw(equInfoJson2)');
+    function validarEnviarFormulario() {
+        var object = $("#EditarProducto").serialize();
+        $.ajax('/ComprasYa/validarEditarProducto',
+                {
+                    data: object,
+                    dataType: 'html',
+                    cache: false,
+                    type: 'post'
+                })
+                .done(function (response) {
+                    if (response != "true") { swal.fire({ title: response, text: "Presione OK para continuar", icon: "warning" }); return false}
+                    else { $("#EditarProducto").submit();}
+                });
+    }
+</script>
+<a style="float:left;" href="@Url.Action("ListadoPublicaciones", "ComprasYa")" class="btn btn-danger">
+    <span><strong>Volver Atras</strong></span>
+</a>
+<br />
+<br />
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "EditarProducto", autocomplete = "off", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>EDITAR PRODUCTO</h4>
+    <div id="cuerpo">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <table>
+            <tr>
+                <th colspan="2">Codigo de producto</th>
+                <td>@Html.EditorFor(model => model.docentry, new { htmlAttributes = new { @class = "form-control", @readonly = "true" } })</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td colspan="10">@Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control" } })</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td colspan="10">
+                    @Html.EditorFor(model => model.descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                </td>
+            </tr>
+            <tr>
+                <th>Marca</th>
+                <td colspan="5">@Html.EditorFor(model => model.marca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                <th>Categoria</th>
+
+                <td colspan="2">
+                    @Html.EditorFor(model => model.categoria2, new { htmlAttributes = new { @class = "form-control"  , @readonly = "true" } })
+                </td>
+                <th>SubCategoria</th>
+                <td colspan="2">
+                    @Html.EditorFor(model => model.subcategoria2, new { htmlAttributes = new { @class = "form-control" , @readonly = "true" } })
+                </td>
+
+            </tr>
+            <tr>
+                <th>Precio</th>
+                <td colspan="5">@Html.EditorFor(model => model.precio, new { htmlAttributes = new { @class = "form-control" } })</td>
+                <th>Stock</th>
+                <td colspan="2">@Html.EditorFor(model => model.stock, new { htmlAttributes = new { @class = "form-control" } })</td>
+
+            </tr>
+            <tr>
+                <th>Garantia</th>
+                <td colspan="2">
+                    <select name="garantia" class="form-select">
+                        <option value="">Seleccione</option>
+                        @if (Model.garantia == "SI")
+                        {
+                            <option value="SI" selected>SI</option>
+                        }
+                        else
+                        {
+                            <option value="SI">SI</option>
+                        }
+                        @if (Model.garantia == "NO")
+                        {
+                            <option value="NO" selected>NO</option>
+                        }
+                        else
+                        {
+                            <option value="NO">NO</option>
+                        }
+                    </select>
+                </td>
+                <th>Color</th>
+                <td colspan="6">@Html.EditorFor(model => model.color, new { htmlAttributes = new { @class = "form-control" } })</td>
+            </tr>
+        </table>
+        <br />
+        <div class="form-group col-11">
+            <button type="button" class="btn btn-success" onclick="validarEnviarFormulario();"><strong>Editar</strong></button>
+        </div>
+        <br />
+    </div>
+}
+<script>
+
+    if ('@ViewBag.mensaje' != "") {
+        swal.fire({
+            title: "@ViewBag.mensaje",
+            text: "Verifique campos",
+            icon: "warning"
+        })
+    };
+</script>

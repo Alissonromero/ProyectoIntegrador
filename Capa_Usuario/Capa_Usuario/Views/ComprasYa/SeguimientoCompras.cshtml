@@ -1,0 +1,35 @@
+﻿@model Capa_Entidad.Pedido_E
+@{
+    ViewBag.Title = "SeguimientoCompras";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>SEGUIMIENTO DE PEDIDO</h4>
+<a style="float:left;" href="@Url.Action("ListadoCompras", "ComprasYa")" class="btn btn-danger">
+    <span><strong>Volver Atras</strong></span>
+</a>
+<br />
+<br />
+<table class="table table-light table-bordered table-active table-striped table-responsive-sm" style="width:450px; margin-left:30%">
+    <tr>
+        <th># de pedido</th>
+        <td>@Html.DisplayFor(model => model.docentry)</td>
+    </tr>
+    <tr>
+        <th>Fecha de confirmacion de pedido</th>
+        <td>@Html.DisplayFor(model => model.fecreg)</td>
+    </tr>
+    <tr>
+        <th>Dias de estimacion de entrega<i class="icon-truck"></i></th>
+        <td>5 dias</td>
+    </tr>
+    <tr>
+        <th>
+            Fecha de entrega
+        </th>
+        <td>
+            @Html.DisplayFor(model => model.fecreg2)
+        </td>
+    </tr>
+</table>
+

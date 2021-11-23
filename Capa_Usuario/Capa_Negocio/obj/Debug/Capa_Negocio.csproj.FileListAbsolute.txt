@@ -1,0 +1,99 @@
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csprojAssemblyReference.cache
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csprojAssemblyReference.cache
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csprojAssemblyReference.cache
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+F:\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csprojAssemblyReference.cache
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csprojAssemblyReference.cache
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb

@@ -1,0 +1,99 @@
+﻿@model Capa_Entidad.Usuario_E
+
+@{
+    ViewBag.Title = "DetallesUsuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>DETALLE USUARIO</h4>
+<a  style="float:left;" href="@Url.Action("GestionUsuarios", "ComprasYa")" class="btn btn-danger">
+    <span><strong>Volver Atras</strong></span>
+</a>
+<br />
+<br />
+<table class="table table-light table-bordered table-active table-striped table-responsive-sm" style="width:450px; margin-left:30%">
+    <tr>
+        <th>Dni</th>
+        <td>@Html.DisplayFor(model => model.dni)</td>
+    </tr>
+    <tr>
+        <th>
+            Nombres
+        </th>
+        <td>
+            @Html.DisplayFor(model => model.nombre)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Apellidos
+        </th>
+        <td>
+            @Html.DisplayFor(model => model.apellido)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Fecha de Registro
+        </th>
+
+        <td>
+            @Html.DisplayFor(model => model.fecreg)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Fecha de Nacimiento
+        </th>
+
+        <td>
+            @Model.fecnac.ToString("dd/MM/yyyy")
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Direccion actual
+        </th>
+
+        <td>
+            @Html.DisplayFor(model => model.direccion)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Pais de nacimiento
+        </th>
+
+        <td>
+            @Html.DisplayFor(model => model.pais)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Telefono y/o Celular
+        </th>
+
+        <td>
+            @Html.DisplayFor(model => model.telefono)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Correo Electronico
+        </th>
+
+        <td>
+            @Html.DisplayFor(model => model.correo)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Operario de Creacion
+        </th>
+
+        <td>
+            @Html.DisplayFor(model => model.opCreacion)
+        </td>
+    </tr>
+</table>
+

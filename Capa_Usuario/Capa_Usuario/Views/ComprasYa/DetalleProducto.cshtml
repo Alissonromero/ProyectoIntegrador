@@ -1,0 +1,163 @@
+﻿@model Capa_Entidad.Producto_E
+
+@{
+    ViewBag.Title = "DetalleProducto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .contenido {
+        width: 1100px;
+        height: 650px;
+        background-color: rgb(220, 220, 220, 0.8);
+    }
+
+    .imagenes {
+        padding: 25px;
+        float: left;
+        width: 550px;
+        height: auto;
+        display: flex;
+    }
+
+    aside {
+        padding-top: 5px;
+        width: 550px;
+        height: 700px;
+        float: right;
+        text-align: center;
+    }
+
+    .product-small-img img {
+        width: 100%;
+        height:200px;
+        border: 1px solid rgb(255 106 0);
+        padding: 10px;
+        margin: 8px;
+        cursor: pointer;
+    }
+
+    .product-small-img {
+        width: 30%;
+        display: flex;
+    }
+
+    .img-container img {
+        float: left;
+        margin-left: 30%;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img-container {
+        padding: 10px;
+        width: 45%;
+    }
+    table tr{
+    font-size:13px;
+    }
+</style>
+
+<div class="contenido">
+
+    <div class="imagenes">
+        <div class="product">
+            <div class="img-container">
+                <img id="imageBox" src="@Url.Content(Model.fotos)" />
+            </div>
+
+            <div class="product-small-img">
+                <img src="@Url.Content(Model.fotos)" onclick="mifuncion(this)">
+
+                <img src="@Url.Content(Model.fotos2)" onclick="mifuncion(this)">
+
+                <img src="@Url.Content(Model.fotos3)" onclick="mifuncion(this)">
+            </div>
+        </div>
+    </div>
+
+    <aside>
+        <table class="table" border="0">
+            <tr>
+                <th colspan="3"><strong>INFORMACION DEL PRODUCTO</strong></th>
+            </tr>
+            <tr>
+                <th>Nombre del Producto:</th>
+                <td>@Html.DisplayFor(model => model.nombre)</td>
+            </tr>
+            <tr>
+                <th>Descripción: </th>
+                <td>@Html.DisplayFor(model => model.descripcion)</td>
+            </tr>
+            <tr>
+                <th>Categoria:</th>
+                <td>@Html.DisplayFor(model => model.categoria2) / @Html.DisplayFor(model => model.subcategoria2)</td>
+            </tr>
+            <tr>
+                <th>Color:</th>
+                @if (Model.color != null)
+                {
+                    <td>@Html.DisplayFor(model => model.color)</td>
+                }
+                else
+                {
+                    <td><p>_______________</p></td>
+                }
+
+            </tr>
+            <tr>
+                <th>Garantia:</th>
+                <td>@Html.DisplayFor(model => model.garantia)</td>
+            </tr>
+            <tr>
+                <th>Precio:</th>
+                <td>@Html.DisplayFor(model => model.precio)</td>
+            </tr>
+
+            @using (Html.BeginForm())
+            {
+                @Html.Hidden("id", Model.docentry)
+                <tr>
+                    <th>Ingrese cantidad</th>
+                    <td><input class="form-control-sm" type="number" name="cantidad" id="cantidad" value="1" /></td>
+                    @*<td>@Html.TextBox("cantidad", 1)</td>*@
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="submit" value="Vista previa del pedido" class="btn btn-warning" /></td>
+                </tr>
+            }
+
+            <tr>
+                <th colspan="3"><strong>INFORMACION DEL VENDEDOR</strong></th>
+            </tr>
+            <tr hidden>
+                <th>Publicador cod</th>
+                <td>@Html.DisplayFor(model => model.idRegistro)</td>
+            </tr>
+            <tr>
+                <th>Publicador:</th>
+                <td>@Html.DisplayFor(model => model.opRegistro)</td>
+            </tr>
+            <tr>
+                <th>Direccion Fiscal:</th>
+                <td>@Html.DisplayFor(model => model.direccionPublicador)</td>
+            </tr>
+            <tr>
+                <th>Fecha de publicación:</th>
+                <td>@Html.DisplayFor(model => model.tiempoRegistro)</td>
+            </tr>
+        </table>
+   </aside>
+</div>
+
+<script type="text/javascript">
+function mifuncion(smallImg) {
+    var fullImg = document.getElementById("imageBox");
+    fullImg.src = smallImg.src;
+}
+</script>
+<script>
+    if ('@ViewBag.mensaje' !="") {
+        swal("@ViewBag.mensaje", "Presione el boton para continuar", "success");
+    }
+</script>
+

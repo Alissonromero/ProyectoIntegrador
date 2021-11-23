@@ -1,0 +1,195 @@
+﻿@model Capa_Entidad.Producto_E
+@using Capa_Entidad
+@{
+    ViewBag.Title = "PublicarProductos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Categoria_E> categoria = (List<Categoria_E>)ViewBag.Categorias;
+    List<SubCategoria_E> subcategoria = (List<SubCategoria_E>)ViewBag.SubCategorias;
+    var jss = new System.Web.Script.Serialization.JavaScriptSerializer();
+    var equInfoJson = jss.Serialize(categoria);
+    var equInfoJson2 = jss.Serialize(subcategoria);
+}
+<style>
+    td {
+        padding: 5px;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    #cuerpo {
+        padding: 15px;
+        width: 1110px;
+        background-color: #DBECEC;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+    });
+    var artInfo = "";
+    var equInfo = JSON.parse('@Html.Raw(equInfoJson)');
+    var equInfo2 = JSON.parse('@Html.Raw(equInfoJson2)');
+
+    function validarEnviarFormulario() {
+        var object = $("#PublicarProductos").serialize();
+        $.ajax('/ComprasYa/validarNuevoProducto',
+            {
+                data: object,
+                dataType: 'html',
+                cache: false,
+                type: 'post'
+            })
+            .done(function (response) {
+                if (response != "true") { swal.fire({ title: response, text: "Presione OK para continuar", icon: "warning" }); return false }
+                else { $("#PublicarProductos").submit(); }
+            });
+    }
+</script>
+
+<div class="form-control">
+    <h2 style="color:darkblue">Publicar Productos</h2>
+</div>
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item active"> Bienvenido a Compras Ya </li>
+    <li class="breadcrumb-item active"> Publica tu producto aquí con toda la confianza que te brindamos</li>
+
+</ol>
+
+<br />
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "PublicarProductos", autocomplete = "off", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div id="cuerpo">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <hr />
+
+        <div class="row" style="margin-top: 3%">
+
+
+            <div class="col-lg-4">
+                <label for="nombre"><strong>Nombre</strong></label>
+                <input class="form-control" type="text" name="nombre" id="nombre" />
+            </div>
+
+            <div class="col-lg-8">
+                <label for="descripcion"><strong>Descripción</strong></label>
+                <input class="form-control" type="text" name="descripcion" id="descripcion" />
+            </div>
+
+
+        </div>
+
+
+
+        <div class="row" style="margin-top: 3%">
+
+            <div class="col-lg-4">
+                <label for="marca"><strong>Marca</strong></label>
+                <input class="form-control" type="text" name="marca" id="marca" />
+            </div>
+
+            <div class="col-lg-4">
+                <label for="categoria"><strong>Categoria</strong></label>
+                <select class="form-select" id="categoria" type="text" name="categoria">
+                    <option value="-1">Seleccione...</option>
+                    @foreach (Categoria_E obj in categoria)
+                    {
+                        <option value="@obj.docentry">@obj.tipo</option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-lg-4">
+                <label for="categoria"><strong>SubCategoria</strong></label>
+                <select class="form-select" id="subcategoria" type="text" name="subcategoria">
+                    <option value="-1">Seleccione...</option>
+                    @foreach (SubCategoria_E obj in subcategoria)
+                    {
+                        <option value="@obj.docentry">@obj.tipo</option>
+                    }
+                </select>
+            </div>
+
+
+
+        </div>
+
+        <div class="row" style="margin-top: 3%">
+
+            <div class="col-lg-3">
+                <label for="precio"><strong>Precio</strong></label>
+                <input class="form-control" type="text" name="precio" id="precio" />
+            </div>
+            <div class="col-lg-3">
+                <label for="stock"><strong>Stock</strong></label>
+                <input class="form-control" type="text" name="stock" id="stock" />
+            </div>
+
+            <div class="col-lg-4">
+                <label for="color"><strong>Color</strong></label>
+                <input class="form-control" type="text" name="color" id="color" />
+            </div>
+            <div class="col-lg-2">
+                <label for="garantia"><strong>Garantía</strong></label>
+                <select class="form-select" id="garantia" type="text" name="garantia">
+                    <option value="NO">NO</option>
+                    <option value="SI">SI</option>
+                </select>
+            </div>
+        </div>
+
+        <br />
+        <label for="fotos"><strong>Imágenes</strong></label>
+        <div class="row" style="margin-top: 3%">
+
+
+
+            <div class="col-lg-4">
+
+                @Html.TextBox("archivo", "", new { type = "file", accept = "image/*", @class = "form-control" })
+            </div>
+
+            <div class="col-lg-4">
+
+                @Html.TextBox("archivo2", "", new { type = "file", accept = "image/*", @class = "form-control" })
+            </div>
+
+            <div class="col-lg-4">
+
+                @Html.TextBox("archivo3", "", new { type = "file", accept = "image/*", @class = "form-control" })
+            </div>
+
+        </div>
+        <br />
+
+        <br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-12">
+
+
+                <button type="button" class="btn btn-success" onclick="validarEnviarFormulario();"><strong>Registrar</strong></button>
+            </div>
+        </div>
+
+
+    </div>
+
+}
+
+
+
+<script>
+
+    if ('@ViewBag.mensaje' != "") {
+        swal.fire({
+            title: "@ViewBag.mensaje",
+            text: "Verifique campos",
+            icon: "warning"
+        })
+    };
+</script>

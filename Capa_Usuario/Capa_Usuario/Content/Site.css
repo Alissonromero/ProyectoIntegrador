@@ -1,0 +1,17 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin:0;
+}
+
+/* Set padding to keep content from hitting the edges */
+#body-content {
+    padding:0;
+    margin:0;
+}

@@ -1,0 +1,206 @@
+﻿@model IEnumerable<Capa_Entidad.Producto_E>
+@using Capa_Entidad;
+
+@{ ViewBag.Title = "ListadoProductos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Producto_E f = (Producto_E)ViewBag.Producto;
+    var ListaProductos = ViewBag.listaProductos; }
+<style>
+    #cajas {
+        border-top-width: 5px;
+        border-right-width: 5px;
+        border-left-width: 5px;
+        border-bottom-width: 5px;
+        border-color: darkorange;
+        border-style: outset;
+        margin: 0px;
+        border-radius: 20px;
+    }
+
+        #cajas p {
+            font-size: 13px;
+        }
+
+    #banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #banner .contenedor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #fff;
+    }
+
+    #banner a {
+        display: block;
+        width: 200px;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 400px;
+        margin-left: 750px;
+        border: 3px solid #fff;
+    }
+
+        #banner a:hover {
+            background: rgba(255,180,20,0.5);
+        }
+
+    .producto {
+        max-width: 400px;
+        display: flex;
+        flex-flow: column;
+        border-radius: 6px;
+        box-shadow: 0 0 0.2em rgba(0,0,0,0.2);
+        background-color: white;
+        cursor: pointer;
+        transition-property: box-shadow;
+        transition-duration: 0.3s;
+    }
+
+        .producto:hover {
+            box-shadow: 0 0 1.5em rgba(0,0,0,0.2);
+        }
+
+        .producto > img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+    .informacion {
+        border-top: 1px solid rgba(230,230,230);
+        padding: 1em;
+        display: flex;
+        flex-flow: column;
+    }
+
+
+        .informacion * + * {
+            margin-bottom: 0.5em;
+        }
+
+    .tipo-envio {
+        background-color: rgb(52,131,250);
+        color: rgb(255,255,255);
+        font-weight: 600;
+        max-width: max-content;
+        padding: 0 0.2em;
+        border-radius: 3px;
+    }
+
+    .precio {
+        font-size: 1.5em;
+    }
+
+    .precio-envio {
+        color: rgb(0,166,80);
+    }
+
+    .calificacion, .vendedor {
+        transition-duration: 0.3s;
+        transition-property: opacity;
+        opacity: 0;
+    }
+
+    .producto:hover .calificacion,
+    .producto:hover .vendedor {
+        opacity: 1;
+    }
+
+    .descripcion, .vendedor {
+        font-weight: 300;
+    }
+
+    .precio-envio, .descripcion, .vendedor {
+        font-size: 0.9em;
+    }
+
+    .tipo-envio, .calificacion > span:last-child {
+        font-size: 0.8em;
+    }
+
+    .calificacion > span:first-child {
+        color: yellow;
+    }
+
+    .cuerpo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 359px);
+        grid-template-rows: 1fr;
+        grid-gap: 1em;
+    }
+</style>
+
+
+<section id="banner">
+    <img src="~/Imagenes/banner/banner.jpg" />
+    <div class="contenedor">
+        <a href="@Url.Action("PublicarProductos", "ComprasYa")" class="btn btn-info">
+            <span><strong>Publicar Productos</strong></span>
+        </a>
+    </div>
+</section>
+<br />
+
+
+<div class="cuerpo">
+    @foreach (var p in ListaProductos)
+    {
+        <div class="producto">
+
+            <img src="@Url.Content(p.fotos)">
+
+            <div class="informacion">
+
+                <span><strong>@p.nombre</strong></span>
+
+                <span class="tipo-envio">Envío con normalidad</span>
+
+                <span class="precio">S/. @p.precio</span>
+
+                <span class="precio-envio">Envío gratis</span>
+
+                <span class="descripcion">@p.descripcion</span>
+                <span class="descripcion">
+                    @p.marca
+                </span>
+                <span class="descripcion">
+                    @p.categoria2 / @p.subcategoria2
+                </span>
+
+                        <span class="vendedor">@p.opRegistro</span>
+
+                        @Html.ActionLink("Comprar", "DetalleProducto", new { id = p.docentry }, new { @class = "btn btn-primary" })
+</div>
+
+
+            <div class="calificacion">
+
+                <span>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                </span>
+
+                <span>100</span>
+            </div>
+
+
+
+        </div>
+
+        <script type="text/javascript" src="~/Scripts/friconix.js"></script>
+    }
+</div>
+
+
+<script>
+    if ('@ViewBag.mensaje' !="") {
+        swal("@ViewBag.mensaje", "Presione el boton para continuar", "success");
+    }
+</script>

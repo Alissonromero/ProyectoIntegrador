@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "ActualizarContraseña";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    $(document).ready(function () {
+    });
+    function validarEnviarFormulario() {
+        var object = $("#ActualizarContraseña").serialize();
+        $.ajax('/ComprasYa/validarNuevaContraseña',
+            {
+                data: object,
+                dataType: 'html',
+                cache: false,
+                type: 'post'
+            })
+            .done(function (response) {
+                if (response != "true") { swal.fire({ title: response, text: "Presione OK para continuar", icon: "warning" }); return false }
+                else { $("#ActualizarContraseña").submit(); }
+            });
+    }
+    function mostrarPassword1() {
+        var cambio = document.getElementById("txtPassword1");
+        if (cambio.type == "password") {
+            cambio.type = "text";
+            $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+        } else {
+            cambio.type = "password";
+            $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+        }
+    }
+    function mostrarPassword2() {
+        var cambio = document.getElementById("txtPassword2");
+        if (cambio.type == "password") {
+            cambio.type = "text";
+            $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+        } else {
+            cambio.type = "password";
+            $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+        }
+    }
+    function mostrarPassword3() {
+        var cambio = document.getElementById("txtPassword3");
+        if (cambio.type == "password") {
+            cambio.type = "text";
+            $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+        } else {
+            cambio.type = "password";
+            $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+        }
+    }
+</script>
+<a style="float:left;" href="@Url.Action("SesionUsuario", "ComprasYa")" class="btn btn-primary">
+    <i class="icon-home3"></i>
+    <span><strong>Volver al menu</strong></span>
+</a>
+<br />
+<br />
+<div id="bodyform">
+    <div class="m-0 row justify-content-center align-items-center">
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "ActualizarContraseña" }))
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <img style="width:100px; height:80px;" src="~/Imagenes/logo.png" />
+            <form action="ActualizarContraseña" method="post">
+                <h6 style="color:blue; text-align:center;">Actualizacion de Contraseña</h6>
+                <div class="input-group">
+                    <input id="txtPassword1" class="form-control" type="password" placeholder="Ingrese su contraseña actual" name="contraseña" autocomplete="off" />
+                    <div class="input-group-append">
+                        <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword1()"> <span class="fa fa-eye-slash icon"></span> </button>
+                    </div>
+                </div><br />
+                <div class="input-group">
+                    <input id="txtPassword2" class="form-control" size="40" type="password" placeholder="Ingrese su nueva contraseña" name="newcontraseña" autocomplete="off" />
+                    <div class="input-group-append">
+                        <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword2()"> <span class="fa fa-eye-slash icon"></span> </button>
+                    </div>
+                </div><br />
+                <div class="input-group">
+                    <input id="txtPassword3" class="form-control" size="40" type="password" placeholder="Repita su nueva contraseña" name="password" autocomplete="off" />
+                    <div class="input-group-append">
+                        <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword3()"> <span class="fa fa-eye-slash icon"></span> </button>
+                    </div>
+                </div><br />
+                <div class="form-group" style="text-align:center">
+                    <button type="button" class="btn btn-danger" onclick="validarEnviarFormulario();">Guardar Contraseña</button>
+                </div>
+                <p style="color:red; font-size:12px; float:left">La nueva contraseña debe tener por lo menos 6 - 12 caracteres, considere (#&$*@@) &nbsp; Recuerde llenar todos los campos</p>
+            </form>
+        }
+    </div>
+</div>
+
+
+

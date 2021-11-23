@@ -1,0 +1,102 @@
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.pdb
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Usuario.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.Optimization.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.Mvc.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.WebPages.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.Razor.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Usuario.pdb
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Usuario.dll.config
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.Optimization.xml
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.Mvc.xml
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.WebPages.xml
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.Razor.xml
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\es\System.Web.Optimization.resources.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\es\System.Web.Mvc.resources.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\es\System.Web.WebPages.resources.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\es\System.Web.WebPages.Razor.resources.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\es\System.Web.Razor.resources.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\bin\Debug\es\System.Web.WebPages.Deployment.resources.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.dll
+E:\Desarrollos\ComprasYa\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.dll
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.dll
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.dll
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.pdb
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.dll
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.pdb
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.dll
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.dll
+F:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.pdb
+E:\Desarrollos\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.dll
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\TI-05\Desktop\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.pdb
+F:\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.dll
+F:\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.pdb
+F:\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.dll
+F:\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+F:\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
+F:\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+F:\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+F:\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.dll
+F:\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.dll
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\TI-05\Desktop\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.dll
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\Alisson\Downloads\IntegratingProject-romero\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.pdb
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.dll
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.pdb
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.dll
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.dll
+F:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.pdb
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.dll
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Datos.pdb
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.dll
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.dll
+E:\Desarrollos\Proyecto Integrador nuevo\IntegratingProject\Capa_Usuario\Capa_Datos\obj\Debug\Capa_Datos.pdb

@@ -1,0 +1,132 @@
+﻿@model Capa_Entidad.Usuario_E
+@using Capa_Entidad
+@{
+    ViewBag.Title = "RegistrarUsuario2";
+    Layout = null;
+    var jss = new System.Web.Script.Serialization.JavaScriptSerializer();
+}
+
+<style>
+    td {
+        padding: 5px;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    #cuerpo {
+        padding: 15px;
+        width: 960px;
+        margin-left: 8%;
+        background-color: rgb(220, 220, 220, 0.8);
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+    });
+    var artInfo = "";
+
+    function validarEnviarFormulario() {
+        var object = $("#RegistrarUsuario2").serialize();
+        $.ajax('/ComprasYa/validarNuevoUsuarioVisitante',
+            {
+                data: object,
+                dataType: 'html',
+                cache: false,
+                type: 'post'
+            })
+            .done(function (response) {
+                if (response != "true") { swal.fire({ title: response, text: "Presione OK para continuar", icon: "warning" }); return false }
+                else { $("#RegistrarUsuario2").submit(); }
+            });
+    }
+</script>
+<link href="~/Content/Boostsrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/estilos.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/alertify.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/sweetalert2@11.js"></script>
+<script src="~/Scripts/alertify.min.js"></script>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "RegistrarUsuario2", autocomplete = "off" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="container" style="margin-top: 50px; text-align: center;">
+    <a style="float:left;" href="@Url.Action("GestionUsuarios", "ComprasYa")" class="btn btn-danger">
+        <span><strong>Volver Atras</strong></span>
+    </a><br /><br />
+    <div id="cuerpo">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <a style="float:left;" href="@Url.Action("Index", "ComprasYa")" class="btn btn-warning">
+            Ya tienes una cuenta? <span><strong>Ingresa aqui</strong></span>
+        </a>
+        <br />
+        <br />
+        <h5 style="font-weight:700;">Registrate con nosotros</h5><br />
+        <table>
+
+            <tr>
+                <th>@Html.DisplayName("Nombres")</th>
+                <td colspan="5"><input class="form-control" type="text" name="nombre" id="nombre" /></td>
+                <th>@Html.DisplayName("Apellidos")</th>
+                <td><input class="form-control" type="text" name="apellido" id="apellido" style="width:380px" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayName("Dni")</th>
+                <td colspan="2"><input class="form-control" type="number" name="dni" id="dni" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayName("Fec Nacimiento")</th>
+                <td colspan="2"><input class="form-control" type="date" name="fecnac" id="fecnac" /></td>
+                <th>@Html.DisplayName("Direccion")</th>
+                <td colspan="5"><input class="form-control" type="text" name="direccion" id="direccion" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayName("Telefono")</th>
+                <td colspan="2"><input class="form-control" type="text" name="telefono" id="telefono" /></td>
+                <th>@Html.DisplayName("Correo")</th>
+                <td colspan="4"><input class="form-control" type="email" name="correo" id="correo" style="width:300px" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayName("Pais")</th>
+                <td colspan="2"><input class="form-control" type="text" name="pais" id="fecnac" /></td>
+            </tr>
+            <tr>
+                <th> @Html.DisplayName("Contraseña")</th>
+                <td colspan="2"><input class="form-control" type="password" name="contraseña" id="contraseña" autocomplete="new-password" /></td>
+                <th>@Html.DisplayName("Repita contraseña")</th>
+                <td colspan="4"><input class="form-control" type="password" name="newcontraseña" id="newcontraseña" autocomplete="new-password" /></td>
+            </tr>
+
+        </table>
+        <br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-12">
+                <button type="button" class="btn btn-success" onclick="validarEnviarFormulario();"><strong>Registrar</strong></button>
+            </div>
+        </div>
+    </div>
+</div>
+        }
+
+        <script>
+
+    if ('@ViewBag.mensaje' != "") {
+        swal.fire({
+            title: "@ViewBag.mensaje",
+            text: "Verifique campos",
+            icon: "warning"
+        })
+    };
+        </script>

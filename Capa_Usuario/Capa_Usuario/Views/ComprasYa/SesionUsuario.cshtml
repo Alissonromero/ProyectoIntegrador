@@ -1,0 +1,32 @@
+﻿
+@model Capa_Entidad.Usuario_E
+
+
+@{
+    ViewBag.Title = "SesionUsuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<div class="text-lg-center">
+    <br />
+    <h5><b>Manual de Usuario</b></h5><br />
+    <a href="@Url.Action("Manual", "ComprasYa")" class="btn btn-success">
+        <i class="icon-download"></i>
+        <span><strong>Descargue su Manual</strong></span>
+    </a>
+</div>
+
+
+
+<script>
+
+    if ('@ViewBag.mensaje' != "") {
+        swal.fire({
+            title: "@ViewBag.mensaje",
+            text: "",
+            icon: "succes"
+        })
+    };
+</script>
+
+

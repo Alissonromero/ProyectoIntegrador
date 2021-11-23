@@ -1,0 +1,179 @@
+﻿@model Capa_Entidad.Pedido_E
+
+@{
+    ViewBag.Title = "GestionPedido";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    th, td {
+        text-align: justify;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+    });
+    function validarEnviarFormulario() {
+        var object = $("#GestionPedido").serialize();
+        $.ajax('/ComprasYa/validarNuevoPedido',
+            {
+                data: object,
+                dataType: 'html',
+                cache: false,
+                type: 'post'
+            })
+            .done(function (response) {
+                if (response != "true") { swal.fire({ title: response, text: "Presione OK para continuar", icon: "warning" }); return false }
+                else { $("#GestionPedido").submit(); }
+            });
+    }
+</script>
+
+<h4>RESUMEN DE PEDIDO</h4>
+<a style="float:left;" href="@Url.Action("ListadoProductos", "ComprasYa")" class="btn btn-danger">
+    <span><strong>Volver al catalogo</strong></span>
+</a>
+<br />
+<br />
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "GestionPedido", autocomplete = "off" }))
+{
+    @Html.AntiForgeryToken()
+    <table class="table table-bordered table-striped table-light" >
+        <tr>
+            <td hidden>
+             
+                <input name="docentry" value="@Model.docentry" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayName("Cliente")
+            </th>
+            <td>
+            
+                <input class="form-control" name="nomcliente" value="@Model.nomcliente" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayName("Codigo de producto")
+            </th>
+            <td>
+                PR0000-<input name="idproducto" class="form-control" value="@Model.idproducto" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayName("Nombre producto")
+            </th>
+            <td>
+            
+                <input class="form-control"  name="nomproducto" value="@Model.nomproducto" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <td hidden>
+
+                <input class="form-control" name="idvendedor" value="@Model.idvendedor" readonly="readonly" />
+            </td>
+            <th>
+                @Html.DisplayName("Nombre del vendedor")
+            </th>
+            <td>
+
+                <input class="form-control" name="vendedor" value="@Model.vendedor" readonly="readonly" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayName("Precio Unit")
+            </th>
+            <td>
+                S/. 
+                <input class="form-control" name="precio" value="@Model.precio" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Cantidad
+            </th>
+            <td>
+                <input class="form-control" name="cantidad" value="@Model.cantidad" readonly="readonly" />
+            </td>
+        </tr>
+        @if (Model.descuento > 0)
+        {
+            <tr>
+                <th>
+                    @Html.DisplayName("Descuento (aplica para un envio gratis)")
+                </th>
+                <td>
+                    S/.
+                    <input class="form-control" name="descuento" value="@Model.descuento" readonly="readonly"/>
+                </td>
+
+            </tr>
+        }
+
+        <tr>
+            <th style="font-size:18px; color:darkred"><b>TOTAL FINAL A PAGAR</b></th>
+
+            <td style="font-size:18px; color:darkred">
+                <strong>
+                    S/. 
+                    <input class="form-control" name="totalreal" value="@Model.totalreal" readonly="readonly"/>
+                </strong>
+            </td>
+        </tr>
+    </table>
+    <table class="table table-bordered table-striped table-light" border="0" >
+        <tr>
+            <th>Ingrese lugar de Entrega</th>
+            <td><input class="form-control" type="text" name="lugarDestino" value="" autocomplete="off" /></td>
+        </tr>
+        <tr>
+            <td hidden><input class="form-control" type="text" name="docentry2" value="" /></td>
+        </tr>
+        <tr>
+            <th>Tipo de comprobante</th>
+            <td>
+                <select class="form-select" name="tipo">
+                    <option value="">[Seleccione]</option>
+                    <option value="Boleta">Boleta</option>
+                    <option value="Factura">Factura</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Modo de Pago</th>
+            <td>
+                <select class="form-select" name="modpago">
+                    <option value="">[Seleccione]</option>
+                    <option value="Contado">Contado</option>
+                    <option value="Credito">Credito</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Cuotas</th>
+            <td><input class="form-control" type="number" name="cuotas" value="" /></td>
+        </tr>
+    </table>
+    <br />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-12">
+            <button type="button" class="btn btn-success" onclick="validarEnviarFormulario();"><strong>GENERAR PEDIDO</strong></button>
+        </div>
+    </div>
+
+}
+
+<script>
+
+    if ('@ViewBag.mensaje' != "") {
+        swal.fire({
+            title: "@ViewBag.mensaje",
+            text: "Verifique campos",
+            icon: "warning"
+        })
+    };
+</script>
