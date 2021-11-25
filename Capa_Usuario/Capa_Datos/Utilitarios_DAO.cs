@@ -16,8 +16,8 @@ namespace Capa_Datos
         public Utilitarios_DAO()
         {
             this.schemaSql = "BD_ComprasYa";
-            //this.cadSql = @"Server=LAPTOP-B6PNOHFC\ALISSON;database=" + this.schemaSql + ";integrated security=true; Min Pool Size=0;Max Pool Size=10024;Pooling=true"; 
-            this.cadSql = @"Server=W10P-ALISSON;database=" + this.schemaSql + ";integrated security=true; Min Pool Size=0;Max Pool Size=10024;Pooling=true";
+            this.cadSql = @"Server=.;database=" + this.schemaSql + ";integrated security=true; Min Pool Size=0;Max Pool Size=10024;Pooling=true"; 
+            //this.cadSql = @"Server=W10P-ALISSON;database=" + this.schemaSql + ";integrated security=true; Min Pool Size=0;Max Pool Size=10024;Pooling=true";
         }
     }
 }
