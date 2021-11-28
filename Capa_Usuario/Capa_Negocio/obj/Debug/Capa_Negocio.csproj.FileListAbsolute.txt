@@ -108,3 +108,14 @@ D:\.Git_proyecto_integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\obj\Deb
 D:\.Git_proyecto_integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
 D:\.Git_proyecto_integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
 D:\.Git_proyecto_integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.dll
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csprojAssemblyReference.cache
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Negocio\obj\Debug\Capa_Negocio.pdb

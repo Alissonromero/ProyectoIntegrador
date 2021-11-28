@@ -533,16 +533,15 @@ namespace Capa_Usuario.Controllers
             else
             { return RedirectToAction("ErrorOperacion"); }
         }
-        //falta seguimiento
-        public ActionResult SeguimientoCompras(Pedido_E filtro, int id,int idOperacion = 16)
+        public ActionResult SeguimientoCompras(Pedido_E filtro, int id, int idOperacion = 16)
         {
             if (verificacionAccesos(idOperacion) == "C_Access")
             {
                 Usuario_E user = (Usuario_E)Session["Usuario"];
-            Pedido_N pedidoN = new Pedido_N();
-            ViewBag.Pedido = filtro;
-            filtro.docentry = id;
-            return View(pedidoN.listarPedidos(filtro, user.docentry));
+                Pedido_N pedidoN = new Pedido_N();
+                ViewBag.Pedido = filtro;
+                filtro.docentry = id;
+                return View(pedidoN.listarPedidos(filtro, user.docentry));
             }
 
             else if (verificacionAccesos(idOperacion) == "E_Login")
@@ -559,6 +558,22 @@ namespace Capa_Usuario.Controllers
                 Pedido_N pedidoN = new Pedido_N();
                 ViewBag.Pedido = filtro;
                 return View(pedidoN.listarPedidosVen(filtro, user.docentry));
+            }
+
+            else if (verificacionAccesos(idOperacion) == "E_Login")
+            { return RedirectToAction("Index"); }
+            else
+            { return RedirectToAction("ErrorOperacion"); }
+
+        }
+        public ActionResult EnCaminoVenta(int id, string estado, int idcom, int idOperacion = 17)
+        {
+            if (verificacionAccesos(idOperacion) == "C_Access")
+            {
+
+                Pedido_N pedidoN = new Pedido_N();
+                pedidoN.enCaminoVenta(id, estado, idcom);
+                return RedirectToAction("AtenderPedidos");
             }
 
             else if (verificacionAccesos(idOperacion) == "E_Login")

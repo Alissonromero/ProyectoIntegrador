@@ -112,13 +112,21 @@
                 Estado
                 <select name="estado" onchange="filtrar();" class="form-select" style="width: 80px; font-size: 13px;">
                     <option value="">Seleccione</option>
-                    @if (f.estado == "En Proceso")
+                    @if (f.estado == "Pendiente")
                     {
-                        <option value="En Proceso" selected>En Proceso</option>
+                        <option value="Pendiente" selected>Pendiente</option>
                     }
                     else
                     {
-                        <option value="En Proceso">En Proceso</option>
+                        <option value="Pendiente">Pendiente</option>
+                    }
+                    @if (f.estado == "En Camino")
+                    {
+                    <option value="En Camino" selected>En Camino</option>
+                    }
+                    else
+                    {
+                    <option value="En Camino">En Camino</option>
                     }
                     @if (f.estado == "Entregado")
                     {
@@ -135,41 +143,54 @@
 
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    PE00-@Html.DisplayFor(modelItem => item.docentry)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.nomcliente)
-                </td>
-                <td>
-                    @item.fecreg.ToString("dd/MM/yyyy")
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.precio)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.cantidad)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.total)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.lugarDestino)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.tipo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.modpago)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.estado)
-                </td>
-                <td>
-                    <a style="color:yellow" href="@Url.Action( "AtenderVenta", "ComprasYa", new { id = item.docentry, estado=item.estado,idcom=item.docentry2 })"><i title="Atender" class="icon-pushpin"></i></a>
-                </td>
-            </tr>
+    <tr>
+        <td>
+            PE00-@Html.DisplayFor(modelItem => item.docentry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomcliente)
+        </td>
+        <td>
+            @item.fecreg.ToString("dd/MM/yyyy")
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cantidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.total)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lugarDestino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.modpago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        @if (item.estado == "Pendiente")
+        {
+            <td>
+                <a style="color:green" href="@Url.Action( "EnCaminoVenta", "ComprasYa", new { id = item.docentry, estado=item.estado,idcom=item.docentry2 })"><i title="Embarcar" class="icon-truck"></i></a>
+            </td>
+        }
+        else if (item.estado == "En Camino")
+        {
+            <td>
+                <a style="color:yellow" href="@Url.Action( "AtenderVenta", "ComprasYa", new { id = item.docentry, estado=item.estado,idcom=item.docentry2 })"><i title="Atender" class="icon-pushpin"></i></a>
+            </td>
+        }
+                else
+                {
+                    <td></td>
+                }
+        </tr>
         }
 
     </table>

@@ -1,35 +1,56 @@
-﻿@model Capa_Entidad.Pedido_E
-@{
-    ViewBag.Title = "SeguimientoCompras";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@model IEnumerable<Capa_Entidad.Pedido_E>
 
-<h4>SEGUIMIENTO DE PEDIDO</h4>
-<a style="float:left;" href="@Url.Action("ListadoCompras", "ComprasYa")" class="btn btn-danger">
-    <span><strong>Volver Atras</strong></span>
+@{ ViewBag.Title = "SeguimientoCompras";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<h2 style="color:darkblue">Seguimiento de mis compras</h2>
+<br />
+<a style="float:left;" href="@Url.Action("ListadoCompras", "ComprasYa")" class="btn btn-warning">
+    <span><strong>Volver al listado</strong></span>
 </a>
 <br />
 <br />
-<table class="table table-light table-bordered table-active table-striped table-responsive-sm" style="width:450px; margin-left:30%">
-    <tr>
-        <th># de pedido</th>
-        <td>@Html.DisplayFor(model => model.docentry)</td>
-    </tr>
-    <tr>
-        <th>Fecha de confirmacion de pedido</th>
-        <td>@Html.DisplayFor(model => model.fecreg)</td>
-    </tr>
-    <tr>
-        <th>Dias de estimacion de entrega<i class="icon-truck"></i></th>
-        <td>5 dias</td>
-    </tr>
-    <tr>
-        <th>
-            Fecha de entrega
-        </th>
-        <td>
-            @Html.DisplayFor(model => model.fecreg2)
-        </td>
-    </tr>
-</table>
+<img style="align-content:center;width:200px; height:150px; box-shadow: 10px 10px 5px #ffffff;" src="~/Imagenes/camion_entrega_pedido.jpg" />
+<br />
+<br />
+@foreach (var item in Model)
+{
+    if (item.estado == "Pendiente")
+    {
+<div class="row">
+    <div class="col-md-12">
+        <div class="progress" style="height:30px">
+            <div class="progress-bar " role="progressbar"
+                 style="width:33.3%; background-color:yellow; color:black;font-weight:700">
+                PENDIENTE
+            </div>
+        </div>
+    </div>
+</div> }
+else if (item.estado == "En Camino")
+{
+<div class="row">
+    <div class="col-md-12">
+        <div class="progress" style="height:30px">
+            <div class="progress-bar" role="progressbar"
+                 style="width:66.6%;background-color:darkorange; color:blue;font-weight:700 ;">
+                EN CAMINO
+            </div>
+        </div>
+    </div>
+</div> }
+else if (item.estado == "Entregado")
+{
+<div class="row">
+    <div class="col-md-12">
+        <div class="progress" style="height:30px">
+            <div class="progress-bar " role="progressbar"
+                 style="width:100%; background-color:green ;color:yellow;font-weight:700; ">
+                ENTREGADO
+            </div>
+        </div>
+    </div>
+</div>}
+}
+
 

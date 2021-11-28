@@ -45,3 +45,9 @@ D:\.Git_proyecto_integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\obj\Deb
 D:\.Git_proyecto_integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
 D:\.Git_proyecto_integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.dll
 D:\.Git_proyecto_integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csprojAssemblyReference.cache
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+C:\Users\Alisson\Desktop\Proyecto Integrador\ProyectoIntegrador\Capa_Usuario\Capa_Entidad\obj\Debug\Capa_Entidad.pdb

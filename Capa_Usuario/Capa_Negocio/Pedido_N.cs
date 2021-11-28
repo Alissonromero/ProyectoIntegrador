@@ -20,6 +20,10 @@ namespace Capa_Negocio
         {
             pedidoD.atenderVenta(id, estado, idcom);
         }
+        public void enCaminoVenta(int id, string estado, int idcom)
+        {
+            pedidoD.enCaminoVenta(id, estado, idcom);
+        }
         public List<Pedido_E> listarPedidos(Pedido_E filtro, int id)
         {
             return pedidoD.listarPedidos(filtro, id);

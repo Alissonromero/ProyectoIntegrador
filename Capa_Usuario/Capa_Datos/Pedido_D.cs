@@ -82,6 +82,34 @@ namespace Capa_Datos
             catch (Exception e2) { cn.Close(); throw new Exception("Error en creacion y conexion: " + e2.Message); }
 
         }
+        public void enCaminoVenta(int id, string estado, int idcom)
+        {
+            SqlConnection cn = new SqlConnection(uti.cadSql);
+            try
+            {
+                cn.Open();
+                SqlTransaction tran = cn.BeginTransaction("transaccion1");
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("MANT_PED", cn);
+                    cmd.Transaction = tran;
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@TipoMantenimiento", "EC");
+                    cmd.Parameters.AddWithValue("@docentry", id).Direction = ParameterDirection.InputOutput;
+                    cmd.Parameters.AddWithValue("@estado", estado);
+                    cmd.Parameters.AddWithValue("@docentry2", idcom).Direction = ParameterDirection.InputOutput;
+
+                    cmd.ExecuteNonQuery();
+
+                    tran.Commit();
+                }
+                catch (Exception e) { tran.Rollback(); cn.Close(); throw new Exception("Error en creacion: " + e.Message); }
+                cn.Close();
+            }
+            catch (Exception e2) { cn.Close(); throw new Exception("Error en creacion y conexion: " + e2.Message); }
+
+        }
         public List<Pedido_E> listarPedidos(Pedido_E filtro, int id)
         {
             List<Pedido_E> lista = new List<Pedido_E>();
