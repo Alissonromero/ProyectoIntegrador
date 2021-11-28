@@ -17,7 +17,7 @@ namespace Capa_Datos
         {
             this.schemaSql = "BD_ComprasYa";
             //this.cadSql = @"Server=.;database=" + this.schemaSql + ";integrated security=true; Min Pool Size=0;Max Pool Size=10024;Pooling=true"; 
-            this.cadSql = @"Server=W10P-ALISSON;database=" + this.schemaSql + ";integrated security=true; Min Pool Size=0;Max Pool Size=10024;Pooling=true";
+            this.cadSql = @"Server=.;database=" + this.schemaSql + ";integrated security=true; Min Pool Size=0;Max Pool Size=10024;Pooling=true";
         }
     }
 }

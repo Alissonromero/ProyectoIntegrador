@@ -3,54 +3,103 @@
 @{ ViewBag.Title = "SeguimientoCompras";
     Layout = "~/Views/Shared/_Layout.cshtml"; }
 
-<h2 style="color:darkblue">Seguimiento de mis compras</h2>
+
+<div class="form-control">
+    <h2 style="color:darkblue">Seguimiento de mis compras</h2>
+</div>
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item active"> Bienvenido a Compras Ya </li>
+    <li class="breadcrumb-item active"> Estás viendo el Seguimiento de tus compras</li>
+
+</ol>
+
 <br />
 <a style="float:left;" href="@Url.Action("ListadoCompras", "ComprasYa")" class="btn btn-warning">
     <span><strong>Volver al listado</strong></span>
 </a>
 <br />
+
 <br />
-<img style="align-content:center;width:200px; height:150px; box-shadow: 10px 10px 5px #ffffff;" src="~/Imagenes/camion_entrega_pedido.jpg" />
+<table class="table table-light table-bordered table-active table-striped table-responsive-sm">
+    <tr>
+        <th>
+            <span><strong>Nombre del vendedor</strong></span>
+        </th>
+        <th>
+            <span><strong>Estado del pedido</strong></span>
+        </th>
+        <th>
+            <span><strong>Fecha de llegada</strong></span>
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.vendedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecreg)
+            </td>
+        </tr>
+    }
+
+</table>
+<br />
+<img style="align-content:center;width:300px; height:250px; box-shadow: 10px 10px 5px #ffffff;" src="~/Imagenes/camion_entrega_pedido.jpg" />
 <br />
 <br />
+
+<div class="form-control">
+    <h4 style="color:darkblue">Estado de tu pedido en este momento:</h4>
+</div>
+<br />
+<br />
+
 @foreach (var item in Model)
 {
     if (item.estado == "Pendiente")
     {
-<div class="row">
-    <div class="col-md-12">
-        <div class="progress" style="height:30px">
-            <div class="progress-bar " role="progressbar"
-                 style="width:33.3%; background-color:yellow; color:black;font-weight:700">
-                PENDIENTE
+        <div class="row">
+            <div class="col-md-12">
+                <div class="progress" style="height:30px">
+                    <div class="progress-bar" role="progressbar"
+                         style="width:33.3%; background-color:yellow; color:black;font-weight:700">
+                        Pendiente
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div> }
-else if (item.estado == "En Camino")
-{
-<div class="row">
-    <div class="col-md-12">
-        <div class="progress" style="height:30px">
-            <div class="progress-bar" role="progressbar"
-                 style="width:66.6%;background-color:darkorange; color:blue;font-weight:700 ;">
-                EN CAMINO
+        </div> }
+    else if (item.estado == "En Camino")
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <div class="progress" style="height:30px">
+                    <div class="progress-bar" role="progressbar"
+                         style="width:66.6%;background-color:darkorange; color:blue;font-weight:700 ;">
+                        En Camino
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div> }
-else if (item.estado == "Entregado")
-{
-<div class="row">
-    <div class="col-md-12">
-        <div class="progress" style="height:30px">
-            <div class="progress-bar " role="progressbar"
-                 style="width:100%; background-color:green ;color:yellow;font-weight:700; ">
-                ENTREGADO
+        </div> }
+    else if (item.estado == "Entregado")
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <div class="progress" style="height:30px">
+                    <div class="progress-bar " role="progressbar"
+                         style="width:100%; background-color:green ;color:yellow;font-weight:700; ">
+                        ENTREGADO
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>}
+        </div>}
 }
 
 
